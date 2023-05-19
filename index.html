@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>JavaScript</title>
+</head>
+<body>
+  <h1>Conversor de medidas</h1>
+  <form>
+    <label for="medida">Seleccione la medida:</label>
+    <select id="medida" onchange="crearLista()">
+      <option value="">--Seleccione una medida--</option>
+      <option value="tiempo">Tiempo</option>
+      <option value="masa">Masa</option>
+      <option value="volumen">Volumen</option>
+      <option value="longitud">Longitud</option>
+    </select>
+    <br><br>
+    <label for="valor">Ingrese el valor:</label>
+    <input type="number" id="valor" name="valor">
+    <span id="nuevaLista"></span>
+    <br><br>
+    <button type="button" onclick="obtenerValores()">Convertir</button>
+  </form>
+  <br>
+  <div id="resultado"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
